@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flor Amarela | Feitio de Ideias</title>
+
+    <link rel="stylesheet" href="feitio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+<header class="header">
+
+ 
+  <div class="top-bar">
+    <div class="logo">
+      <img src="Logotipo_feitio.png" alt="Feitio de Ideias">
+
+     
+      <a href="https://www.instagram.com/feitio_ideias" target="_blank" class="insta-texto">
+    
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B4F3B" stroke-width="1.5">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+
+    <span>acompanhe nosso universo</span>
+
+  </a>
+    </div>
+
+
+    <div class="user-area">
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </div>
+  </div>
+
+
+
+  <nav class="menu">
+    <ul>
+
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="sobre.html">Sobre</a>
+        <ul>
+          <li><a href="sobre.html">Missão</a></li>
+        </ul>
+      </li>
+
+      
+
+      <li>
+        <a href="#">Ficção</a>
+        <ul>
+          <li><a href="#">Romances</a></li>
+          <li><a href="#">Contos</a></li>
+          <li><a href="#">Poesia</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Infantil</a>
+        <ul>
+          <li><a href="#">Flor Amarela</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Pré-venda</a>
+        <ul>
+          <li><a href="#">Amazon</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Blog</a>
+        <ul>
+          <li><a href="#">Flor Amarela</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Seu Carrinho</a></li>
+
+    </ul>
+  </nav>
+
+</header>
+
+
+<script>
+    const banner = document.getElementById("cookie-banner");
+    const button = document.getElementById("accept-cookies");
+
+    // Verifica se já aceitou
+    if (localStorage.getItem("cookiesAccepted")) {
+        banner.style.display = "none";
+    }
+
+    button.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+</script>
+
+
+
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+        Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+        <a href="politica-privacidade.html">Política de Privacidade</a>.
+    </p>
+    <button id="accept-cookies">Aceitar</button>
+</div>
+
+
+  <section class="hero-flor">
+
+    <div class="hero-overlay">
+
+        <img src="Imagens/arte-gigi_mockup_menina.png" alt="Flor Amarela">
+
+    </div>
+
+</section>
+
+
+<!-- SOBRE O SELO -->
+
+<section class="sobre-flor">
+
+    <div class="container-editorial">
+
+        <div class="container-flor-amarela">
+
+            <!-- IMAGEM -->
+
+            <div class="imagem-flor">
+
+                <img src="Imagens/mockup-menina-arte.png"
+                     alt="Flor Amarela">
+
+            </div>
+
+
+            <!-- TEXTO -->
+
+            <div class="texto-flor">
+
+                <h2>Um selo feito para a infância</h2>
+
+                <p>
+                    A Flor Amarela nasceu como o selo infantil
+                    da Feitio de Ideias:
+                    um espaço dedicado a histórias que acolhem,
+                    despertam imaginação e cultivam delicadeza.
+                </p>
+
+                <p>
+                    Acreditamos na infância como território
+                    de descoberta, afeto e encantamento —
+                    um tempo precioso onde os livros podem florescer
+                    junto com a sensibilidade.
+                </p>
+
+                <p>
+                    Cada coleção é pensada para respeitar
+                    o olhar da criança,
+                    incentivando curiosidade,
+                    imaginação e vínculo afetivo com a leitura.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COLEÇÃO -->
+
+<section class="colecao-gigi">
+
+    <div class="container-editorial">
+
+        <!-- TÍTULO -->
+
+        <div class="titulo-colecao">
+
+            <h2>Coleção Gigi Quer Crescer</h2>
+
+            <p>
+                Pequenas aventuras sobre crescer,
+                sentir e descobrir o mundo.
+            </p>
+
+        </div>
+
+
+        <!-- GRID -->
+
+        <div class="grid-livros">
+
+            <!-- CARD 1 -->
+
+            <div class="card-livro">
+
+                <img src="Imagens/mockup_gigi.png"
+                     alt="Livro Gigi">
+
+                <h3>Gigi quer crescer</h3>
+
+                <p>
+                    Uma história delicada sobre descobertas,
+                    tempo e imaginação.
+                </p>
+
+                <a href="#" class="botao-livro">
+                    Saiba mais
+                </a>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="card-livro">
+
+                <img src="Imagens/mockup4.png"
+                     alt="Livro Gigi">
+
+                <h3>Gigi vai à escola</h3>
+
+                <p>
+                    Uma aventura sensível sobre olhar,
+                    curiosidade e afeto.
+                </p>
+
+                <a href="#" class="botao-livro">
+                    Saiba mais
+                </a>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="card-livro">
+
+                <img src="Imagens/mockup2.png"
+                     alt="Livro Gigi">
+
+                <h3>Gigi fazendo arte</h3>
+
+                <p>
+                    Uma narrativa poética sobre mudanças,
+                    sonhos e crescimento.
+                </p>
+
+                <a href="#" class="botao-livro">
+                    Saiba mais
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FRASE FINAL -->
+
+<section class="frase-final">
+
+    <p>
+        “Toda infância merece histórias
+        que floresçam junto com ela.”
+    </p>
+
+</section>
+
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    
+<div>
+  <h4>Feitio de Ideias</h4>
+  <p>Histórias que cultivam afeto e Imaginação<br/>
+
+  </p>
+  
+
+
+  <div class="footer-social">
+    <h4>Redes sociais</h4>
+
+    <a href="https://www.instagram.com/feitio_ideias" target="_blank" class="social-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r="1"></circle>
+      </svg>
+      Instagram
+    </a>
+  </div>
+</div>
+
+
+
+    <div>
+      <h4>Informações</h4>
+      <a href="termos-condicoes.html">Termos e Condições</a>
+      <a href="politica-privacidade.html">Política de Privacidade</a>
+      <a href="trocas-devolucoes.html">Trocas e Devoluções</a>
+      <a href="politica-cookies.html">Política de Cookies</a>
+    </div>
+
+  
+    <div>
+      <h4>Loja</h4>
+      <a href="#">Ficção</a>
+      <a href="#">Infantil</a>
+      <a href="#">Pré-venda</a>
+    </div>
+
+
+    <div>
+      <h4>Formas de pagamento</h4>
+      <img src="Imagens/bandeirascartoes.png" width="40%">
+
+      <hr>
+      
+      <h4>Site 100% seguro</h4>
+    </div>
+
+   
+    <div>
+      <h4>Contato</h4>
+      <p>Email: contato@feitioideias.com</p>
+      <p>São Paulo - SP</p>
+    </div>
+
+
+    </div>
+
+  <div class="footer-bottom">
+    © 2026 Feitio de Ideias — Todos os direitos reservados
+  </div>
+
+</footer>
+
+</body>
+</html>
+```
+
